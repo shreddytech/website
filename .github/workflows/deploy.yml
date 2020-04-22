@@ -19,4 +19,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.BOT_ACCESS_TOKEN }}
           BRANCH: master
           FOLDER: dist
-          TARGET_FOLDER: docs/
