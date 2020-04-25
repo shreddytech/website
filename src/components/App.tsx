@@ -1,20 +1,28 @@
 import * as React from "react";
-import Splash from "./Splash";
+import Content from "./Content";
 
 export default function App(): JSX.Element {
   return (
-    <div>
+    <>
       <Header />
-      <Splash />
+      <Content />
       <Footer />
-    </div>
+    </>
   );
 }
 
 function Header(): JSX.Element {
-  return <></>;
+  return (<header />);
 }
 
+const footer = "</> with ☕ and 🌧️ in Seattle, WA";
+
 function Footer(): JSX.Element {
-  return <></>;
+  return (
+    <footer>
+      <div>
+        <p className="subtext">{footer}</p>
+      </div>
+    </footer>
+  );
 }
